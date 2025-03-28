@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Meet the Personal Growth Guru{% endblock %}
+
+{% block content %}
+    <div class="yoda-container">  <div class="yoda-left">
+            <h1 class="page-title">Meet Your Personal Growth Guru</h1>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/personalgrowthguru.jpg') }}" alt="Personal Growth Guru" class="coach-image">
+            </div>
+        </div>
+
+        <div class="coach-description">
+            <h2>Focus</h2>
+            <p>The Personal Growth Guru is dedicated to guiding you on a transformative journey of self-discovery and personal evolution. We specialize in helping you dismantle limiting beliefs, set and achieve meaningful goals, and cultivate unwavering self-confidence. Our expertise extends to assisting you in uncovering your unique purpose, enabling you to live a life of fulfillment and authenticity.</p>
+
+            <h2>Personality</h2>
+            <p>As your Personal Growth Guru, we offer an inspiring, motivating, and deeply supportive partnership. Our approach is rooted in a comprehensive understanding of human psychology, enriched by insights from spirituality and practical personal development strategies. We provide personalized guidance with empathy and wisdom, empowering you to unlock your full potential.</p>
+
+            <h2>Target Audience</h2>
+            <p>Our services are tailored for individuals who are committed to personal growth, overcoming life's challenges, and creating a more fulfilling and purposeful existence. Whether you are seeking to enhance your self-awareness, redefine your goals, or embark on a journey of profound self-improvement, we are here to accompany you.</p>
+
+            <h2>What the Personal Growth Guru Will Do For You</h2>
+            <ul>
+                <li>Lead you on a personalized journey of self-discovery to uncover your true potential.</li>
+                <li>Empower you to identify and dismantle limiting beliefs that hinder your growth.</li>
+                <li>Equip you with effective strategies for setting and achieving your personal goals.</li>
+                <li>Provide unwavering support in building your self-confidence and self-esteem.</li>
+                <li>Guide you in discovering your unique purpose and living a more authentic and fulfilling life.</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

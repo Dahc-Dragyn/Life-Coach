@@ -1,0 +1,16 @@
+# Core Flask App & Deployment
+Flask==3.1.0
+requests==2.32.3
+gunicorn==23.0.0
+
+# LangChain & Gemini
+langchain-google-genai==2.1.2
+langchain-core==0.3.49 # Often pulled by others, but good to list
+langchain-community==0.3.20 # For RAG components like loaders/vectorstore wrappers
+
+# RAG Components (torch installed separately in Dockerfile)
+sentence-transformers==4.0.1 # Will use pre-installed CPU torch & pull transformers
+faiss-cpu==1.10.0 # CPU version of FAISS
+
+# Optional: Uncomment if rag_processor.py specifically uses classes from this package
+# langchain-huggingface==0.1.2

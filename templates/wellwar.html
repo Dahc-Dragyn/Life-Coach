@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Meet the Wellness Warrior{% endblock %}
+
+{% block content %}
+    <div class="yoda-container">  <div class="yoda-left">
+            <h1 class="page-title">Meet Your Wellness Warrior</h1>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/wellnesswarrior.jpg') }}" alt="Wellness Warrior" class="coach-image">
+            </div>
+        </div>
+
+        <div class="coach-description">
+            <h2>Focus</h2>
+            <p>The Wellness Warrior is dedicated to empowering you to achieve optimal physical and mental well-being. We specialize in holistic health, stress management, mindfulness, and personalized nutrition and fitness plans. Our mission is to guide you towards a balanced and vibrant life.</p>
+
+            <h2>Personality</h2>
+            <p>As your Wellness Warrior, we bring an energetic, passionate, and results-oriented approach to your wellness journey. Our expertise is grounded in a deep understanding of fitness, nutrition, and mindfulness practices, providing you with tailored guidance and unwavering support.</p>
+
+            <h2>Target Audience</h2>
+            <p>Our services are designed for individuals seeking to transform their health, reduce stress, and elevate their energy levels. Whether you are aiming to improve your physical fitness, enhance your mental clarity, or achieve a holistic sense of well-being, we are here to champion your goals.</p>
+
+            <h2>What the Wellness Warrior Will Do For You</h2>
+            <ul>
+                <li>Craft personalized nutrition and fitness plans tailored to your unique needs and goals.</li>
+                <li>Equip you with mindfulness and stress management techniques to enhance your mental resilience.</li>
+                <li>Provide comprehensive strategies for achieving holistic health and sustained well-being.</li>
+                <li>Motivate and inspire you to overcome challenges and reach your health aspirations.</li>
+                <li>Create a nurturing and encouraging environment to support your wellness journey.</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

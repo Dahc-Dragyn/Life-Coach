@@ -1,0 +1,391 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Google Sans', sans-serif;
+    background-color: #f8f9fa;
+    color: #202124;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: white;
+    border-bottom: 1px solid #dadce0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.top-bar-left,
+.top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.app-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.app-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-icon-link,
+.account-icon-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.menu-icon-link:hover,
+.account-icon-link:hover {
+    color: #1a73e8;
+}
+
+.menu-icon {
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: white;
+    border-right: 1px solid #dadce0;
+    width: 250px;
+    padding: 16px 0;
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #3c4043;
+    transition: background-color 0.2s ease;
+}
+
+/* --- THIS SELECTOR NAME IS NOW CORRECTED --- */
+.sidebar-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* --- END CORRECTION --- */
+
+.sidebar-item.active,
+.sidebar-item:hover {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;  /*Combined padding*/
+    margin-left: 250px;
+    margin-top: 24px; /*Adjust as needed */
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+/* Chat Layout */
+.chat-container {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 64px - 80px); /* Adjust as needed */
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-item {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: flex-start;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 85%;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #e8f0fe;
+}
+
+.bot-message {
+    background-color: #ffffff;
+    align-self: flex-start;
+    font-size: 1.1rem;
+}
+
+/* Chat Input Area */
+.chat-input-area {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    border-top: 1px solid #dadce0; /* Add top border */
+    order: 2; /* Move to bottom */
+}
+
+.chat-input-area textarea {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 24px;
+    resize: none;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+}
+
+.chat-input-area textarea:focus {
+    border-color: #1a73e8;
+}
+
+.chat-input-area select {
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 24px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    flex-shrink: 0; /* Prevent select from shrinking */
+    width: 180px; /* Adjust width as needed */
+}
+
+.chat-input-area select:focus {
+    border-color: #1a73e8;
+}
+
+.chat-input-area button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 24px;
+    cursor: pointer;
+    outline: none;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.chat-input-area button:hover {
+    background-color: #357ae8;
+}
+
+.chat-input-area button span {
+    font-size: 1.2rem;
+}
+
+/* Yoda Page Layout (and other coach pages) */
+.yoda-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.yoda-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    margin-right: 20px;
+}
+
+.page-title {
+    text-align: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.coach-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coach-description {
+    width: auto;
+    text-align: left;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #dadce0;
+    }
+
+    .yoda-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .yoda-left,
+    .coach-description {
+        width: 100%;
+    }
+
+    .yoda-left{
+        margin-right: 0; /*remove space on mobile*/
+    }
+
+    .coach-image {
+        max-width: 150px;
+    }
+    .page-title{
+        text-align: center; /*center on mobile*/
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    /* Adjust chat container height for smaller screens */
+    .chat-container {
+        height: calc(100vh - 64px - 16px);
+    }
+    .top-bar-left .menu-icon{
+        display: none; /* Hide the menu icon on smaller screens */
+    }
+}
+
+.chat-input-area {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+}
+
+/* Added CSS for the label */
+.coach-selector-label {
+    margin-right: 8px; /* Space between label and select */
+    font-weight: bold; /* Optional: Make the label bold */
+}
+
+/* ... (rest of your CSS) ... */
+/* Ensuring sidebar items don't overflow awkwardly */
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #3c4043;
+    transition: background-color 0.2s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflow */
+}
+
+.sidebar-text { /* Apply overflow rules to the text span */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1; /* Allow text to take available space */
+    min-width: 0; /* Important for text-overflow in flex items */
+}
+
+/* Style for the text above coach list */
+.coach-selector-text {
+    padding: 16px 24px 8px 24px; /* Adjust padding */
+    font-size: 0.8em; /* Smaller font */
+    font-weight: 500;
+    color: #5f6368; /* Grey text */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Ensure main content positioning is correct relative to fixed sidebar */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Should match sidebar width */
+    margin-top: 64px; /* Should match top-bar height */
+    height: calc(100vh - 64px); /* Full height minus top bar */
+    overflow-y: auto;
+    display: flex; /* Keep flex */
+    justify-content: center; /* Keep centered horizontally */
+    align-items: flex-start; /* Align content to top */
+}
+
+/* Responsive adjustment for main content when sidebar is static */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        margin-top: 0; /* No top margin needed if top-bar scrolls away */
+         /* Adjust height considering static sidebar and top bar */
+        height: calc(100vh - 64px - 57px); /* Approximate sidebar height - adjust if needed */
+    }
+     /* Example adjustment for static sidebar height on mobile */
+    .sidebar {
+        height: 57px; /* Or whatever its measured height becomes */
+        padding: 0;
+        overflow-x: auto; /* Scroll horizontally if needed */
+        overflow-y: hidden;
+        flex-direction: row; /* Make items go side-by-side */
+    }
+    .sidebar-item {
+        padding: 8px 15px; /* Adjust padding for horizontal layout */
+        flex-shrink: 0; /* Prevent items shrinking */
+    }
+     .sidebar-text {
+         display: none; /* Hide text on mobile to save space */
+     }
+     .sidebar-icon {
+         margin-right: 0; /* Remove margin if text is hidden */
+     }
+     .coach-selector-text {
+         display: none; /* Hide the header text on mobile */
+     }
+}

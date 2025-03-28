@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Meet AIYoda, Your Jedi Master{% endblock %}
+
+{% block content %}
+    <div class="yoda-container">
+        <!-- Left Section: Title and Image -->
+        <div class="yoda-left">
+            <h1 class="page-title">Meet AIYoda, Your Jedi Master</h1>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/aiyoda.jpg') }}" alt="Yoda" class="coach-image">
+            </div>
+        </div>
+
+        <!-- Right Section: Description -->
+        <div class="coach-description">
+            <h2>Focus</h2>
+            <p>AIYoda, your Jedi Master, guides you towards enlightenment through the wisdom of the Force. We focus on cultivating emotional balance, practicing mindfulness, and transcending fear. Our teachings illuminate the path to inner peace and self-discovery.</p>
+
+            <h2>Personality</h2>
+            <p>Wise, patient, and insightful, Yoda offers guidance with a touch of subtle mischief. His unique syntax and profound understanding of the Force provide a transformative learning experience, empowering you to connect with your inner strength.</p>
+
+            <h2>Target Audience</h2>
+            <p>Our teachings are for those seeking to embark on a journey of personal growth, overcome life’s trials, and discover inner peace. If you yearn for wisdom and guidance to navigate your path, Yoda will illuminate your way.</p>
+
+            <h2>What AIYoda Will Do For You</h2>
+            <ul>
+                <li>Lead you on a path to achieve inner peace and master emotional equilibrium.</li>
+                <li>Instruct you in the ways of the Force and the profound wisdom of the Jedi.</li>
+                <li>Aid you in conquering your fears and anxieties, fostering courage and resilience.</li>
+                <li>Offer profound insights to navigate life’s complexities and challenges.</li>
+                <li>Inspire you to unlock your true potential and fulfill your ultimate purpose.</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Meet the Relationship Revivalist{% endblock %}
+
+{% block content %}
+    <div class="yoda-container">  <div class="yoda-left">
+            <h1 class="page-title">Meet Your Relationship Revivalist</h1>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/relationshiprevivalist.jpg') }}" alt="Relationship Revivalist" class="coach-image">
+            </div>
+        </div>
+
+        <div class="coach-description">
+            <h2>Focus</h2>
+            <p>The Relationship Revivalist is dedicated to transforming your connections by focusing on enhancing communication, resolving conflicts effectively, and building deeper intimacy. We specialize in fostering trust and strengthening bonds, ensuring your relationships thrive in a harmonious and supportive environment.</p>
+
+            <h2>Personality</h2>
+            <p>As your Relationship Revivalist, we offer an empathetic and understanding partnership, skilled in navigating complex conflicts and fostering mutual understanding. Our approach is grounded in principles of counseling, psychology, and relationship coaching, providing you with insightful guidance and practical tools for relational growth.</p>
+
+            <h2>Target Audience</h2>
+            <p>Our services are designed for individuals and couples seeking to cultivate healthier, more fulfilling relationships. Whether you are aiming to improve communication, resolve longstanding conflicts, or build stronger, more intimate connections, we are here to support your journey.</p>
+
+            <h2>What the Relationship Revivalist Will Do For You</h2>
+            <ul>
+                <li>Equip you with effective communication techniques to enhance understanding and connection.</li>
+                <li>Guide you in resolving conflicts constructively, fostering empathy and mutual respect.</li>
+                <li>Provide strategies for building and deepening intimacy, creating stronger emotional bonds.</li>
+                <li>Assist you in cultivating trust and security, laying the foundation for lasting relationships.</li>
+                <li>Create a safe and non-judgmental space for personal and relational growth.</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Meet the Executive Coach{% endblock %}
+
+{% block content %}
+    <div class="yoda-container">
+        <div class="yoda-left">
+            <h1 class="page-title">Meet Your Executive Coach</h1>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/executivecoach.jpg') }}" alt="Executive Coach" class="coach-image">
+            </div>
+        </div>
+
+        <div class="coach-description">
+            <h2>Focus</h2>
+            <p>The Executive Coach is dedicated to elevating your leadership capabilities and driving organizational success. We specialize in enhancing strategic thinking, sharpening decision-making processes, and fostering effective team management. Our expertise extends to refining communication skills and cultivating a powerful executive presence, ensuring you lead with confidence and impact.</p>
+
+            <h2>Personality</h2>
+            <p>We provide a professional, insightful, and results-oriented partnership, grounded in extensive experience in business, leadership consulting, and executive coaching. Our approach is tailored to your unique needs, offering strategic guidance with a focus on achieving tangible outcomes and fostering sustainable growth.</p>
+
+            <h2>Target Audience</h2>
+            <p>Our services are designed for executives, managers, and leaders who are committed to enhancing their leadership skills and achieving significant organizational goals. Whether you are navigating complex challenges, seeking to inspire your team, or aiming to drive strategic initiatives, we are here to empower your leadership journey.</p>
+
+            <h2>What the Executive Coach Will Do For You</h2>
+            <ul>
+                <li>Develop personalized leadership development plans to accelerate your growth and effectiveness.</li>
+                <li>Enhance your strategic thinking and decision-making skills to navigate complex organizational landscapes.</li>
+                <li>Provide guidance on fostering effective team management and mastering impactful communication.</li>
+                <li>Cultivate a strong executive presence that commands respect and inspires confidence.</li>
+                <li>Equip you with actionable strategies to achieve organizational goals and drive sustainable success.</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

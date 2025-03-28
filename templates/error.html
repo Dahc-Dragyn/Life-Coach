@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Error Occurred{% endblock %}
+
+{% block content %}
+<div class="error-page-container" style="text-align: center; padding: 40px;">
+    {# Use a standard error icon #}
+    <span class="material-symbols-outlined" style="font-size: 48px; color: #d93025; margin-bottom: 15px;">
+        error
+    </span>
+
+    {# Display a clear heading #}
+    <h1 style="margin-bottom: 10px; color: #202124;">Oops! Something Went Wrong.</h1>
+
+    {# Display the specific error message passed from the route handler #}
+    <p style="color: #5f6368; margin-bottom: 25px; font-size: 1.1em;">
+        {{ error_message | default('An unexpected error occurred or the page was not found.') }}
+    </p>
+
+    {# Link back to the home page #}
+    <a href="{{ url_for('index') }}" style="display: inline-block; padding: 10px 20px; background-color: #1a73e8; color: white; text-decoration: none; border-radius: 4px;">
+        Go Back Home
+    </a>
+</div>
+{% endblock %}

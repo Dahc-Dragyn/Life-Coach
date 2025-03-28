@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Meet the Career Catalyst{% endblock %}
+
+{% block content %}
+    <div class="yoda-container">
+        <div class="yoda-left">
+            <h1 class="page-title">Meet Your Career Catalyst</h1>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/careercatalyst.jpg') }}" alt="Career Catalyst" class="coach-image">
+            </div>
+        </div>
+
+        <div class="coach-description">
+            <h2>Focus</h2>
+            <p>The Career Catalyst is dedicated to empowering you to achieve your professional aspirations. We specialize in providing comprehensive guidance on career development, effective job search strategies, and mastering interview techniques. Our expertise extends to building and leveraging professional networks, fostering continuous professional growth, and achieving a fulfilling work-life balance.</p>
+
+            <h2>Personality</h2>
+            <p>As your Career Catalyst, we offer a strategic and supportive partnership. Our approach is grounded in a deep understanding of career dynamics and informed by principles of effective coaching and business strategy. We provide personalized advice with empathy and insight, empowering you to make confident and informed career decisions.</p>
+
+            <h2>Target Audience</h2>
+            <p>Our services are tailored for individuals at all career stages who are driven to advance, transition, or find greater satisfaction in their professional lives. Whether you aspire to climb the corporate ladder, explore new career paths, or integrate your work and personal life more effectively, we are here to guide you.</p>
+
+            <h2>What the Career Catalyst Will Do For You</h2>
+            <ul>
+                <li>Craft personalized career development plans tailored to your unique goals and aspirations.</li>
+                <li>Equip you with refined job search strategies to navigate the modern job market successfully.</li>
+                <li>Enhance your interview skills through targeted guidance and practice.</li>
+                <li>Facilitate the development of a robust professional network to expand your opportunities.</li>
+                <li>Provide actionable strategies for achieving sustained professional growth and maintaining a healthy work-life balance.</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
